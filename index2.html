@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+
+        } 
+        .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+      }
+      .card img{
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+    <h1>OMDB MOVIES</h1>
+    <input type="text" id="searchParam" />
+    <button onclick="getData()">Search</button>
+    <div id="container"></div>
+</body>
+<script src="index2.js"></script>
+</html>
